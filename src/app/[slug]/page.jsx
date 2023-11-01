@@ -5,7 +5,7 @@ const SinglePage = () => {
   return (
     <div className={styles.container}>
       <div className={styles.infoContainer}>
-        <div className={styles.textCotainer}>
+        <div className={styles.textContainer}>
           <h1 className={styles.title}>
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
           </h1>
