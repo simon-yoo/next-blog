@@ -37,6 +37,11 @@
   color: var(--softTextColor);
 }
 
+.username {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 .imageContainer {
   flex: 1;
   height: 350px;
@@ -47,7 +52,18 @@
   object-fit: cover;
 }
 
-.username {
+.content {
+  display: flex;
+  gap: 50px;
+}
+
+.post {
+  flex: 5;
+  margin-top: 60px;
+}
+
+.description p {
   font-size: 20px;
-  font-weight: 500;
+  font-weight: 300;
+  margin-bottom: 20px;
 }
