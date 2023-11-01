@@ -1,4 +1,3 @@
-import React from 'react';
 import Menu from '@/components/menu/Menu';
 import styles from './blogPage.module.css';
 import CardList from '@/components/cardList/CardList';
