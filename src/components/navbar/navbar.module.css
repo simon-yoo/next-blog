@@ -2,6 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 100px;
 }
 
 .social {
@@ -9,12 +10,14 @@
   gap: 10px;
   flex: 1;
 }
+
 .logo {
   flex: 1;
   text-align: center;
   font-size: 36px;
   font-weight: bold;
 }
+
 .links {
   flex: 1;
   align-items: center;
