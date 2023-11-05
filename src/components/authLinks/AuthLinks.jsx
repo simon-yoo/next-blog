@@ -1,16 +1,16 @@
-'use client';
+'use client'
 
-import React, { useState } from 'react';
-import styles from './authLinks.module.css';
-import Link from 'next/link';
+import React, { useState } from 'react'
+import styles from './authLinks.module.css'
+import Link from 'next/link'
 
 const AuthLinks = () => {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(false)
   //temporary
-  const status = 'notauthenticated';
+  const status = 'notauthenticated'
   return (
     <>
-      {status === 'notauthenticated' ? (
+      {status === 'authenticated' ? (
         <Link href='/login' className={styles.link}>
           Login
         </Link>
@@ -43,7 +43,7 @@ const AuthLinks = () => {
         </div>
       )}
     </>
-  );
-};
+  )
+}
 
-export default AuthLinks;
+export default AuthLinks
