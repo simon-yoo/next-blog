@@ -35,3 +35,18 @@
 .socialButton:last-child {
   background-color: #087bea;
 }
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    padding: 50px 100px;
+  }
+}
+@media screen and (max-width: 649px) {
+  .wrapper {
+    padding: 30px;
+  }
+  .socialButton {
+    font-weight: 400;
+    font-size: 14px;
+  }
+}
