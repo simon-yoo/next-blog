@@ -3,9 +3,12 @@
 import Image from 'next/image'
 import styles from './write.module.css'
 import { useState } from 'react'
+import ReactQuill from 'react-quill'
+import 'react-quill/dist/quill.bubble.css'
 
 const WritePage = () => {
-  const [open, setIsOpen] = useState(false)
+  const [open, setOpen] = useState(false)
+  const [value, setVaule] = useState('')
   return (
     <div className={styles.container}>
       <input type='text' placeholder='Title' />
@@ -26,6 +29,12 @@ const WritePage = () => {
             </button>
           </div>
         )}
+        <ReactQuill
+          theme='bubble'
+          value={value}
+          onChange={setVaule}
+          placeholder='Tell your story'
+        />
       </div>
     </div>
   )
