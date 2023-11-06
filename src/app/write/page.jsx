@@ -37,6 +37,7 @@ const WritePage = () => {
           placeholder='Tell your story'
         />
       </div>
+      <button className={styles.pubish}>Publish</button>
     </div>
   )
 }
