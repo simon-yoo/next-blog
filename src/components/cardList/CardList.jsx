@@ -17,7 +17,7 @@ const getData = async (page) => {
 }
 
 const CardList = async ({ page }) => {
-  const data = await getData()
+  const data = await getData(page)
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>Recent Posts</h1>
