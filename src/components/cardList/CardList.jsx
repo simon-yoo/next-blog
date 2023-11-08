@@ -24,7 +24,7 @@ const CardList = async ({ page }) => {
       <div className={styles.posts}>
         <div className={styles.post}>
           {data?.map((item) => (
-            <Card key={item.id} />
+            <Card item={item} key={item._id} />
           ))}
         </div>
       </div>
