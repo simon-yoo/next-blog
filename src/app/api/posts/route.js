@@ -5,6 +5,7 @@ export const GET = async (req) => {
   const { searchParams } = new URL(req.url)
 
   const page = searchParams.get('page')
+  // const cat = serachParams.get('cat')
 
   const POST_PER_PAGE = 2
 
@@ -14,7 +15,7 @@ export const GET = async (req) => {
   }
 
   try {
-    const [posts, count] = await prisma.post.$transaction([
+    const [posts, count] = await prisma.$transaction([
       prisma.post.findMany(query),
       prisma.post.count(),
     ])
