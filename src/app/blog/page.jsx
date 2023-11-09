@@ -4,9 +4,7 @@ import CardList from '@/components/cardList/CardList'
 
 const BlogPage = ({ searchParams }) => {
   const page = parseInt(searchParams.page) || 1
-  console.log(page)
   const { cat } = searchParams
-  console.log(cat)
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>{cat} Blog</h1>
